@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+/// element which is having serial no considered as parent element
+/// element which has radio button considered as child element
 
 describe("Validate EQTest cases", () => {
 
