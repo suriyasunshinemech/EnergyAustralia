@@ -1,10 +1,10 @@
 /// <reference types="cypress" />
-/// element which is having serial no considered as parent element
+/// element which is having serial nos considered as parent element
 /// element which has radio button considered as child element
 
 describe("Validate EQTest cases", () => {
 
-    it.only("Validate count of root element", function () {
+    it.only("Validate count of parent element", function () {
         cy.visit('http://localhost:4200/festivals')
         cy.get('body > ol > li').should('have.length', 18)
     });
@@ -12,7 +12,7 @@ describe("Validate EQTest cases", () => {
 
     it.only("Validate count of child element", function () {
         cy.visit('http://localhost:4200/festivals')
-        cy.get('body > ol > li > ul > li').should('have.length', 18)
+        cy.get('body > ol > li > ul > li').should('have.length', 16)
     });
 
     it.only("Find how many empty child element", function () {
